@@ -2,7 +2,6 @@ const express = require('express');
 const app = express();
 const jwt = require('jsonwebtoken');
 require('dotenv').config();
-
 app.use(express.json());
 
 const posts = [
@@ -37,8 +36,7 @@ app.post('/login', (req, res) => {
 
   // Find the user by username
   const user = posts.find(post => post.name === username);
-  
-  // Check if user exists and password is correct
+
   if (!user || user.password !== password) {
     return res.status(401).json({ message: 'Invalid username or password' });
   }
