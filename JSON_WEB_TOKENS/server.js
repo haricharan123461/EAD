@@ -6,12 +6,12 @@ app.use(express.json());
 
 const posts = [
   {
-    name: "Mokshith",
+    name: "Hari",
     title: "Sustttt!",
     password: "AHVA@2005"
   },
   {
-    name: "Vrits",
+    name: "chintu",
     title: "Crazyy Kadaaa!",
     password: "NONE@2004"
   }
